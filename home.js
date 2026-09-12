@@ -52,7 +52,7 @@ document.querySelectorAll("[data-news-toggle]").forEach((button) => {
     const list = button.closest(".news-panel").querySelector(".news-list");
     const expanded = list.classList.toggle("news-expanded");
     button.setAttribute("aria-expanded", String(expanded));
-    button.textContent = expanded ? "Show less ↑" : "Show more · 6 earlier updates ↓";
+    button.textContent = expanded ? "Show less ↑" : "Show more · 8 earlier updates ↓";
   });
 });
 

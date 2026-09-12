@@ -40,3 +40,6 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# Keep private source documents out of the public site repository.
+/我的资料/
