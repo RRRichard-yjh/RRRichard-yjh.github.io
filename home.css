@@ -286,7 +286,7 @@
 .research-details .focus-card:nth-child(2) { border-top: 3px solid #2c8b68; }
 .research-details .focus-card:nth-child(3) { border-top: 3px solid #c27a28; }
 
-@media (max-width: 1240px) {
+@media (max-width: 1280px) {
   .quick-nav {
     top: auto;
     right: 18px;
@@ -1254,5 +1254,19 @@
   .beyond-media {
     width: 90px;
     height: 76px;
+  }
+}
+/* Give the content a little more breathing room on wide screens while keeping the jump rail compact. */
+:root {
+  --max-width: 1040px;
+}
+@media (min-width: 1281px) {
+  .quick-nav {
+    left: max(20px, calc((100vw - var(--max-width)) / 2 - 148px));
+    width: 128px;
+    padding-left: 11px;
+  }
+  .quick-nav-link {
+    padding-left: 17px;
   }
 }
