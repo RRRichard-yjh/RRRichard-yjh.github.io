@@ -52,7 +52,7 @@ document.querySelectorAll("[data-news-toggle]").forEach((button) => {
     const list = button.closest(".news-panel").querySelector(".news-list");
     const expanded = list.classList.toggle("news-expanded");
     button.setAttribute("aria-expanded", String(expanded));
-    button.textContent = expanded ? "Show less ↑" : "Show more · 8 earlier updates ↓";
+    button.textContent = expanded ? "Show less ↑" : "Show more · 11 earlier updates ↓";
   });
 });
 
@@ -68,3 +68,33 @@ document.querySelectorAll("[data-cite]").forEach((button) => {
     window.setTimeout(() => { button.textContent = label; }, 1600);
   });
 });
+
+const quickLinks = [...document.querySelectorAll(".quick-nav-link")];
+const quickSections = quickLinks
+  .map((link) => document.getElementById(link.getAttribute("href").slice(1)))
+  .filter(Boolean);
+const sectionVisibility = new Map();
+
+const setActiveQuickLink = (activeId) => {
+  quickLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === "#" + activeId;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) link.setAttribute("aria-current", "location");
+    else link.removeAttribute("aria-current");
+  });
+};
+
+if ("IntersectionObserver" in window && quickSections.length) {
+  const quickObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => sectionVisibility.set(entry.target.id, entry));
+    const visibleSections = [...sectionVisibility.values()]
+      .filter((entry) => entry.isIntersecting)
+      .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    if (visibleSections.length) setActiveQuickLink(visibleSections[0].target.id);
+  }, {
+    rootMargin: "-18% 0px -62% 0px",
+    threshold: [0, 0.15, 0.35, 0.6, 1],
+  });
+
+  quickSections.forEach((section) => quickObserver.observe(section));
+}
