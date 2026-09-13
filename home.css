@@ -1270,3 +1270,72 @@
     padding-left: 17px;
   }
 }
+/* Research background: balance the figure and direction columns and blend annotations into the source art. */
+@media (min-width: 901px) {
+  .research-overview {
+    grid-template-columns: minmax(0, .95fr) minmax(360px, 1.05fr);
+    gap: 16px;
+  }
+}
+.research-source-figure {
+  gap: 10px;
+  padding: 8px;
+}
+.research-figure-block {
+  position: relative;
+}
+.research-annotation {
+  position: absolute;
+  z-index: 2;
+  top: 7px;
+  left: 8px;
+  width: auto;
+  max-width: calc(100% - 16px);
+  padding: 2px 6px;
+  border: 0;
+  border-left: 2px solid #d86666;
+  color: #9b4545;
+  background: rgba(255,255,255,.7);
+  font: 500 .6rem/1.35 var(--font-mono);
+  letter-spacing: 0;
+  pointer-events: none;
+}
+#research .section-lead,
+#research .research-direction p {
+  font-family: var(--font-hand);
+}
+#research .section-lead {
+  max-width: 930px;
+  line-height: 1.7;
+}
+#education .edu-content .school a,
+#education .edu-content .dept a,
+#education .edu-content .degree a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: rgba(37,99,235,.25);
+  text-underline-offset: 3px;
+}
+#education .edu-content .school a:hover,
+#education .edu-content .dept a:hover,
+#education .edu-content .degree a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+.doi-link::before,
+.doi-link::after {
+  content: none !important;
+}
+button.pub-link {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .research-annotation {
+    top: 5px;
+    left: 6px;
+    max-width: calc(100% - 12px);
+    font-size: .52rem;
+  }
+}

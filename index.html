@@ -54,8 +54,8 @@
 </div>
 <div class="bio-text">
 <h2 class="visually-hidden" id="about-heading">About Junhao Ye</h2>
-<p>Hi! I am <strong>Junhao Ye (叶俊豪)</strong>, a Ph.D. candidate in the <a href="https://ic.seu.edu.cn/" rel="noopener noreferrer" target="_blank">School of Integrated Circuits at Southeast University</a>, advised by <a href="https://zhejianguk.github.io/" rel="noopener noreferrer" target="_blank">Prof. Zhe Jiang</a>. I received my B.S. in Microelectronics Science and Engineering from Shenzhen University, ranking 1/103 in the comprehensive evaluation.</p>
-<p>My research focuses on <strong>AI for Electronic Design Automation (EDA)</strong>, especially LLM-aided RTL verification: iterative UVM-based verification loops, assertion generation, and SoC security.</p>
+<p>Hi! I am <strong>Junhao Ye (叶俊豪)</strong>, a Ph.D. candidate in the <span>School of Integrated Circuits at Southeast University</span>, advised by <a href="https://zhejianguk.github.io/" rel="noopener noreferrer" target="_blank">Prof. Zhe Jiang</a>. I received my B.S. in Microelectronics Science and Engineering from Shenzhen University, ranking 1/103 in the comprehensive evaluation.</p>
+<p>My research focuses on <strong>AI for Electronic Design Automation (EDA)</strong>, especially LLM-aided RTL verification. I study UVM-based automation spanning testbench and stimulus generation, simulation feedback and refinement, assertion generation, and SoC security detection.</p>
 <p>I have published 4 papers at the leading EDA conferences ICCAD and DAC. I am also a research intern at the National Center for Technology Innovation in EDA, where some of my research work has been integrated into <a href="https://www.nctieda.com/CHATDV.html" rel="noopener noreferrer" target="_blank">ChatDV</a> to support end-to-end automated UVM verification for small IPs. I have received the National Scholarship, Excellent Star of SZU, and Jicui Graduate honors.</p>
 <p class="bio-zh" lang="zh-CN">你好！我是叶俊豪，东南大学集成电路学院博士生，师从江哲教授。本科毕业于深圳大学，并以专业第一推免至东南大学。我的研究聚焦 AI for EDA，主要探索大模型驱动的 RTL 验证，重点关注以 UVM 为核心的自动化验证闭环。</p>
 </div>
@@ -82,7 +82,7 @@
 <li class="news-item news-hidden"><span class="news-date">09 / 2025</span><span class="news-content">Received an <strong>A+</strong> in the lab's annual evaluation and was awarded <strong>“Jicui Graduate” (集萃研究生)</strong>.</span></li>
 <li class="news-item news-hidden"><span class="news-date">07 / 2025</span><span class="news-content"><strong>UVM²</strong> was accepted by <strong>ICCAD 2025</strong> — <em>my first first-author paper!</em> <a href="#publications">[Publication]</a></span></li>
 <li class="news-item news-hidden"><span class="news-date">02 / 2025</span><span class="news-content"><strong>UVLLM</strong> was accepted by <strong>DAC 2025</strong>! <a href="#publications">[Publication]</a></span></li>
-<li class="news-item news-hidden"><span class="news-date">11 / 2024</span><span class="news-content">Won the <strong>department championship in the freshman basketball cup</strong> as the starting point guard, <em>capturing a long-awaited title and fulfilling a dream I had held since my school days!</em></span></li>
+
 <li class="news-item news-hidden"><span class="news-date">07 / 2024</span><span class="news-content">Invited to speak as a representative of the college's undergraduate graduates. <a href="https://mp.weixin.qq.com/s?__biz=MjM5OTkzNjIxNA==&amp;mid=2650891968&amp;idx=1&amp;sn=98080967c620c0be7cc7b262415427bc" rel="noopener noreferrer" target="_blank">[Report]</a></span></li>
 <li class="news-item news-hidden"><span class="news-date">06 / 2024</span><span class="news-content">Awarded the <strong>Honors Bachelor's Degree（荣誉学士）</strong> by Shenzhen University.</span></li>
 <li class="news-item news-hidden"><span class="news-date">06 / 2024</span><span class="news-content">Awarded the <strong>Outstanding Graduate（优秀毕业生）</strong> honor by Shenzhen University.</span></li>
@@ -90,12 +90,12 @@
 <li class="news-item news-hidden"><span class="news-date">09 / 2023</span><span class="news-content">Ranked <strong>1st among 103 students</strong> in the comprehensive evaluation and earned a recommendation for graduate study at Southeast University.</span></li>
 <li class="news-item news-hidden"><span class="news-date">09 / 2023</span><span class="news-content">Received the <strong>National Scholarship（国家奖学金）</strong>, the highest honor for undergraduate students.</span></li>
 </ul>
-<button aria-expanded="false" class="news-toggle" data-news-toggle="" type="button">Show more · 11 earlier updates ↓</button></div>
+<button aria-expanded="false" class="news-toggle" data-news-toggle="" type="button">Show more · 10 earlier updates ↓</button></div>
 </section>
 <hr class="section-divider"/>
 <section aria-labelledby="research-heading" id="research">
-<h2 class="section-title" id="research-heading">Research <span class="section-subtitle">研究方向</span></h2>
-<p class="section-lead">My research focuses on AI for EDA, with verification as the central bottleneck.</p>
+<h2 class="section-title" id="research-heading">Research Background <span class="section-subtitle">研究背景</span></h2>
+<p class="section-lead" lang="zh-CN">随着敏捷硬件开发推动现代片上系统（SoC）项目快速迭代，验证复杂度持续上升。数据显示，在典型的前端流程中，验证已成为主要瓶颈，占用了前端整体周期的近 70%。为了应对这种复杂性，我们探索通过 LLM 辅助 RTL 验证的可能。</p>
 <div class="research-overview">
 <div class="research-bottleneck">
 <div class="research-source-figure">
@@ -110,10 +110,10 @@
 </div>
 </div>
 <div class="research-directions">
-<div class="research-direction-intro"><span>AI FOR EDA</span><p>Verification is the front-end bottleneck. LLMs make it programmable.</p></div>
-<a class="research-direction direction-uvm" href="#research-uvm" id="research-uvm"><span class="direction-index">01</span><div><h3>UVM-TB Generation</h3><p>From RTL to executable testbenches.</p></div><span class="direction-arrow">↗</span></a>
-<a class="research-direction direction-assert" href="#research-sva" id="research-sva"><span class="direction-index">02</span><div><h3>Assertion Generation</h3><p>From design intent to executable properties.</p></div><span class="direction-arrow">↗</span></a>
-<a class="research-direction direction-security" href="#research-security" id="research-security"><span class="direction-index">03</span><div><h3>Security Verification</h3><p>From RTL to validated vulnerabilities.</p></div><span class="direction-arrow">↗</span></a>
+<div class="research-direction-intro"><span>THREE DIRECTIONS</span><p lang="zh-CN">为了解决这些挑战，我围绕三个方向开展研究：</p></div>
+<a class="research-direction direction-uvm" href="#research-uvm" id="research-uvm"><span class="direction-index">01</span><div><h3>UVM Verification</h3><p lang="zh-CN">探索从小模块、IP、Subsystem 到 SoC 的 UVM 自动化验证，覆盖 Testbench 与激励生成。</p></div><span class="direction-arrow">↗</span></a>
+<a class="research-direction direction-assert" href="#research-sva" id="research-sva"><span class="direction-index">02</span><div><h3>Assertion Generation</h3><p lang="zh-CN">探索从设计意图到可执行断言的自动生成，辅助复杂系统的持续验证。</p></div><span class="direction-arrow">↗</span></a>
+<a class="research-direction direction-security" href="#research-security" id="research-security"><span class="direction-index">03</span><div><h3>SoC Security</h3><p lang="zh-CN">探索面向 SoC 的安全检测与漏洞分析，提升复杂系统的可信验证能力。</p></div><span class="direction-arrow">↗</span></a>
 </div>
 </div>
 </section>
@@ -130,11 +130,11 @@
 </li>
 <li class="pub-item">
 <div class="pub-thumb"><a aria-label="Open full-size UVM² framework diagram" class="pub-figure" href="assets/uvm2-framework.png" rel="noopener noreferrer" target="_blank"><img alt="UVM² framework diagram" loading="lazy" src="assets/uvm2-framework.png"/></a></div>
-<div class="pub-body"><div class="pub-title"><a href="https://arxiv.org/abs/2504.19959" rel="noopener noreferrer" target="_blank">From Concept to Practice: an Automated LLM-aided UVM Machine for RTL Verification</a></div><div class="pub-authors"><span class="self">Junhao Ye</span>, Yuchen Hu, Ke Xu, Dingrong Pan, Qichun Chen, Jie Zhou, Shuai Zhao, Xinwei Fang, Xi Wang, Nan Guan, Zhe Jiang</div><div class="pub-venue"><a class="venue-link" href="https://2025.iccad.com/" rel="noopener noreferrer" target="_blank">ICCAD 2025</a> · International Conference on Computer-Aided Design <span class="venue-tier">CCF-B · EDA Top Conference</span></div><div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2504.19959" rel="noopener noreferrer" target="_blank">Paper</a><a class="pub-link" href="https://doi.org/10.1109/ICCAD66269.2025.11240679" rel="noopener noreferrer" target="_blank">DOI</a><a class="pub-link" href="https://github.com/SEU-ACAL/reproduce-UVM--ICCAD-25" rel="noopener noreferrer" target="_blank">Code</a><button aria-live="polite" class="pub-link cite-button" data-cite="uvm2" type="button">Cite</button></div></div>
+<div class="pub-body"><div class="pub-title"><a href="https://arxiv.org/abs/2504.19959" rel="noopener noreferrer" target="_blank">From Concept to Practice: an Automated LLM-aided UVM Machine for RTL Verification</a></div><div class="pub-authors"><span class="self">Junhao Ye</span>, Yuchen Hu, Ke Xu, Dingrong Pan, Qichun Chen, Jie Zhou, Shuai Zhao, Xinwei Fang, Xi Wang, Nan Guan, Zhe Jiang</div><div class="pub-venue"><a class="venue-link" href="https://2025.iccad.com/" rel="noopener noreferrer" target="_blank">ICCAD 2025</a> · International Conference on Computer-Aided Design <span class="venue-tier">CCF-B · EDA Top Conference</span></div><div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2504.19959" rel="noopener noreferrer" target="_blank">Paper</a><a class="pub-link doi-link" href="https://doi.org/10.1109/ICCAD66269.2025.11240679" rel="noopener noreferrer" target="_blank">DOI</a><a class="pub-link" href="https://github.com/SEU-ACAL/reproduce-UVM--ICCAD-25" rel="noopener noreferrer" target="_blank">Code</a><button aria-live="polite" class="pub-link cite-button" data-cite="uvm2" type="button">Cite</button></div></div>
 </li>
 <li class="pub-item">
 <div class="pub-thumb"><a aria-label="Open full-size UVLLM framework diagram" class="pub-figure" href="assets/uvllm-framework.png" rel="noopener noreferrer" target="_blank"><img alt="UVLLM framework diagram" loading="lazy" src="assets/uvllm-framework.png"/></a></div>
-<div class="pub-body"><div class="pub-title"><a href="https://arxiv.org/abs/2411.16238" rel="noopener noreferrer" target="_blank">UVLLM: An Automated Universal RTL Verification Framework using LLMs</a></div><div class="pub-authors">Yuchen Hu, <span class="self">Junhao Ye</span>, Ke Xu, Jialin Sun, Shiyue Zhang, Xinyao Jiao, Dingrong Pan, Jie Zhou, Ning Wang, Weiwei Shan, Xinwei Fang, Xi Wang, Nan Guan, Zhe Jiang</div><div class="pub-venue"><a class="venue-link" href="https://dac.com/62nd-dac" rel="noopener noreferrer" target="_blank">DAC 2025</a> · Design Automation Conference <span class="venue-tier">CCF-A · EDA Top Conference</span></div><div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2411.16238" rel="noopener noreferrer" target="_blank">Paper</a><a class="pub-link" href="https://doi.org/10.1109/DAC63849.2025.11435108" rel="noopener noreferrer" target="_blank">DOI</a><a class="pub-link" href="https://github.com/SEU-ACAL/reproduce-UVLLM-DAC-25" rel="noopener noreferrer" target="_blank">Code</a><button aria-live="polite" class="pub-link cite-button" data-cite="uvllm" type="button">Cite</button></div></div>
+<div class="pub-body"><div class="pub-title"><a href="https://arxiv.org/abs/2411.16238" rel="noopener noreferrer" target="_blank">UVLLM: An Automated Universal RTL Verification Framework using LLMs</a></div><div class="pub-authors">Yuchen Hu, <span class="self">Junhao Ye</span>, Ke Xu, Jialin Sun, Shiyue Zhang, Xinyao Jiao, Dingrong Pan, Jie Zhou, Ning Wang, Weiwei Shan, Xinwei Fang, Xi Wang, Nan Guan, Zhe Jiang</div><div class="pub-venue"><a class="venue-link" href="https://dac.com/62nd-dac" rel="noopener noreferrer" target="_blank">DAC 2025</a> · Design Automation Conference <span class="venue-tier">CCF-A · EDA Top Conference</span></div><div class="pub-links"><a class="pub-link" href="https://arxiv.org/abs/2411.16238" rel="noopener noreferrer" target="_blank">Paper</a><a class="pub-link doi-link" href="https://doi.org/10.1109/DAC63849.2025.11435108" rel="noopener noreferrer" target="_blank">DOI</a><a class="pub-link" href="https://github.com/SEU-ACAL/reproduce-UVLLM-DAC-25" rel="noopener noreferrer" target="_blank">Code</a><button aria-live="polite" class="pub-link cite-button" data-cite="uvllm" type="button">Cite</button></div></div>
 </li>
 </ol>
 </section>
@@ -143,7 +143,7 @@
 <h2 class="section-title" id="education-heading">Education <span class="section-subtitle">教育经历</span></h2>
 <div class="content-panel"><ul class="edu-list">
 <li class="edu-item"><div class="edu-brand"><img alt="Southeast University emblem" class="edu-logo-img" loading="lazy" src="assets/seu-emblem.png"/></div><div class="edu-content"><div class="school"><a href="https://www.seu.edu.cn/" rel="noopener noreferrer" target="_blank">Southeast University</a> <span lang="zh-CN">· 东南大学</span></div><div class="dept"><a href="https://ic.seu.edu.cn/" rel="noopener noreferrer" target="_blank">School of Integrated Circuits</a></div><div class="degree">Graduate study (M.S. → Ph.D.) · Advisor: <a href="https://zhejianguk.github.io/" rel="noopener noreferrer" target="_blank">Prof. Zhe Jiang</a></div></div><div class="edu-meta"><span class="edu-range">Sep. 2024 — Jan. 2030 <span class="edu-expected">(expected)</span></span><span class="edu-location">Nanjing, China</span></div></li>
-<li class="edu-item"><div class="edu-brand"><img alt="Shenzhen University emblem" class="edu-logo-img" loading="lazy" src="assets/szu-emblem.png"/></div><div class="edu-content"><div class="school"><a href="https://www.szu.edu.cn/" rel="noopener noreferrer" target="_blank">Shenzhen University</a> <span lang="zh-CN">· 深圳大学</span></div><div class="dept">School of Electronics and Information Engineering</div><div class="degree">B.S. in Microelectronics Science and Engineering</div></div><div class="edu-meta"><span class="edu-range">Sep. 2020 — Jun. 2024</span><span class="edu-location">Shenzhen, China</span></div></li>
+<li class="edu-item"><div class="edu-brand"><img alt="Shenzhen University emblem" class="edu-logo-img" loading="lazy" src="assets/szu-emblem.png"/></div><div class="edu-content"><div class="school"><a href="https://www.szu.edu.cn/" rel="noopener noreferrer" target="_blank">Shenzhen University</a> <span lang="zh-CN">· 深圳大学</span></div><div class="dept"><a href="https://ceie.szu.edu.cn/" rel="noopener noreferrer" target="_blank">School of Electronics and Information Engineering</a></div><div class="degree">B.S. in Microelectronics Science and Engineering</div></div><div class="edu-meta"><span class="edu-range">Sep. 2020 — Jun. 2024</span><span class="edu-location">Shenzhen, China</span></div></li>
 </ul></div>
 </section>
 <hr class="section-divider"/>
@@ -154,8 +154,7 @@
 <div class="experience-mark"><img alt="National Center for Technology Innovation in EDA logo" class="ncti-logo" src="assets/nctieda-logo.png"/><small>RESEARCH INTERN</small><time class="experience-date" datetime="2025-07">2025.07 - Present</time></div>
 <div class="experience-content">
 <h3><a href="https://www.nctieda.com/Introduction.html" rel="noopener noreferrer" target="_blank">National Center for Technology Innovation in EDA</a></h3>
-<p>Worked on LLM-aided UVM testbench generation, decomposing IP-level verification into component-wise generation, iterative error checking, repair, and stimulus enhancement. Built and evaluated a workflow that connects RTL, specifications, protocol context, simulation feedback, and debugging into one usable verification process.</p>
-<p>The resulting workflow was <strong>integrated as a verification tool in <a href="https://www.nctieda.com/CHATDV.html" rel="noopener noreferrer" target="_blank">ChatDV</a></strong> (<a href="https://github.com/SEU-ACAL/reproduce-UVM--ICCAD-25" rel="noopener noreferrer" target="_blank">project note</a>), enabling small IP-level UVM verification.</p>
+<p>Worked on LLM-aided automation for UVM-based RTL verification, including testbench and stimulus generation. The workflow was <strong>integrated as a verification tool in <a href="https://www.nctieda.com/CHATDV.html" rel="noopener noreferrer" target="_blank">ChatDV</a></strong> (<a href="https://github.com/SEU-ACAL/reproduce-UVM--ICCAD-25" rel="noopener noreferrer" target="_blank">project note</a>), enabling end-to-end small IP-level UVM verification, reducing verification time to hours with a <strong>20x speedup</strong>.</p>
 </div>
 </article>
 </div>
@@ -179,9 +178,9 @@
 <div class="achievement-body"><span class="achievement-year">2026</span><h3>Second Place · Hack@DAC 2026</h3><p>Our team placed second in the Hack@DAC 2026 competition.</p></div>
 </article>
 <article class="achievement-card"><div class="achievement-media"><img alt="National First Prize certificate for the 2023 Undergraduate IoT Design Contest" loading="lazy" src="assets/awards/iot-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National First Prize</h3><p>Undergraduate IoT Design Contest (Huawei Cup)</p></div></article>
-<article class="achievement-card"><div class="achievement-media"><img alt="National Second Prize certificate for the 2023 Blue Bridge Cup" loading="lazy" src="assets/awards/bluebridge-national-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National Second Prize</h3><p>Blue Bridge Cup · Microcontroller Design and Development</p></div></article>
-<article class="achievement-card"><div class="achievement-media"><img alt="National Third Prize certificate for the 2023 IC Innovation Competition" loading="lazy" src="assets/awards/ic-innovation-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National Third Prize</h3><p>China College Students' IC Innovation and Entrepreneurship Competition</p></div></article>
-<article class="achievement-card"><div class="achievement-media"><img alt="Guangdong First Prize certificate for the 2022 Electronics Design Contest" loading="lazy" src="assets/awards/guangdong-electronics-2022.png"/></div><div class="achievement-body"><span class="achievement-year">2022</span><h3>Guangdong First Prize</h3><p>Guangdong Undergraduate Electronics Design Contest · AI &amp; Future Technology</p></div></article>
+<article class="achievement-card"><div class="achievement-media"><img alt="National Second Prize certificate for the 2023 Blue Bridge Cup" loading="lazy" src="assets/awards/bluebridge-national-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National Second Prize</h3><p>Blue Bridge Cup</p></div></article>
+<article class="achievement-card"><div class="achievement-media"><img alt="National Third Prize certificate for the 2023 IC Innovation Competition" loading="lazy" src="assets/awards/ic-innovation-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National Third Prize</h3><p>国家集成电路创新创业大赛</p></div></article>
+<article class="achievement-card"><div class="achievement-media"><img alt="Guangdong First Prize certificate for the 2022 Electronics Design Contest" loading="lazy" src="assets/awards/guangdong-electronics-2022.png"/></div><div class="achievement-body"><span class="achievement-year">2022</span><h3>Guangdong First Prize</h3><p>电子设计大赛</p></div></article>
 </div>
 </section>
 <hr class="section-divider"/>
@@ -192,9 +191,9 @@
 <div class="profile-film-copy"><span class="feature-kicker">SHORT FILM · 02:00</span><h3>Excellent Star of Liyuan · Personal Profile</h3><p>A two-minute portrait produced during my undergraduate years at Shenzhen University, covering study, research, teaching, campus life, and service.</p></div>
 </div>
 <div class="feature-grid">
-<a class="feature-card" href="https://mp.weixin.qq.com/s/vGnVn7MNYWbnIQgrGP-S5Q" rel="noopener noreferrer" target="_blank"><img alt="Cover of SZU Undergraduate Admissions' profile of Junhao Ye" loading="lazy" src="assets/media/feature-slash-youth.jpg"/><span class="feature-card-body"><strong>保研学霸、B站 UP 主、广东三星志愿者：深大“斜杠青年”叶俊豪</strong><small>深圳大学本科招生 · 2024.02.07</small></span></a>
-<a class="feature-card" href="https://mp.weixin.qq.com/s/JQpr91qI14_ukdfJMDalTw" rel="noopener noreferrer" target="_blank"><img alt="Cover of Shenzhen University's story on student excellence" loading="lazy" src="assets/media/feature-excellence.png"/><span class="feature-card-body"><strong>在深大，他们“自定义”卓越</strong><small>深圳大学 · 2024.01.26</small></span></a>
-<a class="feature-card" href="https://mp.weixin.qq.com/s?__biz=MjM5OTkzNjIxNA==&amp;mid=2650891968&amp;idx=1&amp;sn=98080967c620c0be7cc7b262415427bc" rel="noopener noreferrer" target="_blank"><img alt="Shenzhen University 2024 graduates" loading="lazy" src="assets/media/feature-graduation.jpg"/><span class="feature-card-body"><strong>深圳大学 2024 年毕业典礼</strong><small>深圳大学 · 2024.07</small></span></a>
+<a class="feature-card" href="https://mp.weixin.qq.com/s/vGnVn7MNYWbnIQgrGP-S5Q" rel="noopener noreferrer" target="_blank"><img alt="Cover of SZU Undergraduate Admissions' profile of Junhao Ye" loading="lazy" src="assets/media/feature-slash-youth-2024.jpg"/><span class="feature-card-body"><strong>专访荔园卓越之星“斜杠青年”叶俊豪</strong><small>深圳大学本科招生 · 2024.02.07</small></span></a>
+<a class="feature-card" href="https://mp.weixin.qq.com/s/JQpr91qI14_ukdfJMDalTw" rel="noopener noreferrer" target="_blank"><img alt="Cover of Shenzhen University's story on student excellence" loading="lazy" src="assets/media/feature-excellence-szu.jpg"/><span class="feature-card-body"><strong>在深大，他们“自定义”卓越</strong><small>深圳大学 · 2024.01.26</small></span></a>
+<a class="feature-card" href="https://mp.weixin.qq.com/s?__biz=MjM5OTkzNjIxNA==&amp;mid=2650891968&amp;idx=1&amp;sn=98080967c620c0be7cc7b262415427bc" rel="noopener noreferrer" target="_blank"><img alt="Shenzhen University 2024 graduates" loading="lazy" src="assets/media/feature-graduation-2024.jpg"/><span class="feature-card-body"><strong>电子与信息工程学院隆重举行2024届毕业典礼暨学位授予仪式</strong><small>深圳大学 · 2024.07</small></span></a>
 </div>
 </section>
 <hr class="section-divider"/>
@@ -203,20 +202,20 @@
 <p class="beyond-intro">Outside research, I keep life wide through service, storytelling, visual work, and sport.</p>
 <div class="beyond-list">
 <article class="beyond-item">
-<div class="beyond-media"><img alt="Junhao Ye volunteering at a university library" loading="lazy" src="assets/volunteer-library.jpg"/></div>
-<div class="beyond-content"><span class="beyond-index">2.1 / SERVICE</span><h3>Volunteer Activities</h3><p>I contributed <strong>more than 640 hours</strong> to library and community volunteering during my undergraduate years.</p></div>
+<div class="beyond-media"><img alt="Junhao Ye as a Bilibili study creator" loading="lazy" src="assets/media/bilibili-study.png"/></div>
+<div class="beyond-content"><span class="beyond-index">2.1 / CREATOR</span><h3>Bilibili UP Creator</h3><p lang="zh-CN">我是 B 站学习区的一名 UP 主，独立制作的数电、模电课程在 Bilibili 累计播放量超过 <strong>470 万</strong>，帮助 <strong>1w+</strong> 学生通过期末考试和考研。</p><a href="https://space.bilibili.com/674491625" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></div>
 </article>
 <article class="beyond-item">
-<div class="beyond-media"><img alt="Junhao Ye featured as a Bilibili creator" loading="lazy" src="assets/media/feature-slash-youth.jpg"/></div>
-<div class="beyond-content"><span class="beyond-index">2.2 / CREATOR</span><h3>Bilibili UP Creator</h3><p>I share campus life, learning experiences, and personal reflections through video.</p><a href="https://space.bilibili.com/674491625" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></div>
+<div class="beyond-media"><img alt="Junhao Ye volunteering in community service" loading="lazy" src="assets/volunteer-library.jpg"/></div>
+<div class="beyond-content"><span class="beyond-index">2.2 / SERVICE</span><h3>Volunteer Activities</h3><p lang="zh-CN">我是中共党员、广东省三星志愿者（最高星级），参与过献血，并在图书馆、医院、展演现场等场所开展志愿服务，累计时长超过 <strong>640 小时</strong>。</p></div>
 </article>
 <article class="beyond-item">
-<div class="beyond-media"><img alt="Camera and notebook representing photography and vlogging" loading="lazy" src="assets/beyond-photography-vlog.png"/></div>
-<div class="beyond-content"><span class="beyond-index">2.3 / VISUALS</span><h3>Photography / Vlog</h3><p>I use photography and vlogging to record places, people, and the details that shape my journey.</p></div>
+<div class="beyond-media"><img alt="Travel photography and vlogging" loading="lazy" src="assets/beyond-photography-vlog.png"/></div>
+<div class="beyond-content"><span class="beyond-index">2.3 / VISUALS</span><h3>Photography / Vlog</h3><p lang="zh-CN">我热爱旅行、摄影，也会进行旅行 Vlog 的拍摄，并持续更新一些频道内容，目前包括“美国留子的真实生活”。</p><a href="https://weixin.qq.com/sph/AE4d72kixS" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></div>
 </article>
 <article class="beyond-item">
-<div class="beyond-media"><img alt="Basketball court representing sports and an active lifestyle" loading="lazy" src="assets/beyond-sports.png"/></div>
-<div class="beyond-content"><span class="beyond-index">2.4 / MOVEMENT</span><h3>Sports</h3><p>Basketball is my favorite language outside the lab; I also keep running, training, and staying active.</p></div>
+<div class="beyond-media"><img alt="Basketball and fitness" loading="lazy" src="assets/media/beyond-sports-basketball.jpg"/></div>
+<div class="beyond-content"><span class="beyond-index">2.4 / MOVEMENT</span><h3>Sports</h3><p>I have been an NBA fan for over <strong>10 years</strong>, and I enjoy basketball and fitness. I also won the <strong>department championship in the freshman basketball cup</strong> as the starting point guard, <em>capturing a long-awaited title and fulfilling a dream I had held since my school days!</em></p></div>
 </article>
 </div>
 </section>

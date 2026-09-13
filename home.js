@@ -32,9 +32,14 @@ const citations = {
 };
 
 const copyText = async (text) => {
+  if (!text) throw new Error("Citation unavailable");
   if (navigator.clipboard && window.isSecureContext) {
-    await navigator.clipboard.writeText(text);
-    return;
+    try {
+      await navigator.clipboard.writeText(text);
+      return;
+    } catch {
+      // Fall through to the textarea fallback when browser permissions block clipboard access.
+    }
   }
   const field = document.createElement("textarea");
   field.value = text;
@@ -42,9 +47,11 @@ const copyText = async (text) => {
   field.style.position = "fixed";
   field.style.opacity = "0";
   document.body.appendChild(field);
+  field.focus();
   field.select();
-  document.execCommand("copy");
+  const copied = document.execCommand("copy");
   field.remove();
+  if (!copied) throw new Error("Clipboard unavailable");
 };
 
 document.querySelectorAll("[data-news-toggle]").forEach((button) => {
@@ -52,7 +59,7 @@ document.querySelectorAll("[data-news-toggle]").forEach((button) => {
     const list = button.closest(".news-panel").querySelector(".news-list");
     const expanded = list.classList.toggle("news-expanded");
     button.setAttribute("aria-expanded", String(expanded));
-    button.textContent = expanded ? "Show less ↑" : "Show more · 11 earlier updates ↓";
+    button.textContent = expanded ? "Show less ↑" : "Show more · 10 earlier updates ↓";
   });
 });
 
