@@ -16,7 +16,7 @@
 <header class="site-header" id="top">
 <div class="header-topline">ACADEMIC HOMEPAGE <span>·</span> 东南大学 / SOUTHEAST UNIVERSITY</div>
 <h1>Junhao Ye <span class="name-cn">叶俊豪</span></h1>
-<p class="tagline">PhD Student at Southeast University <span>·</span> AI for EDA <span>·</span> RTL Verification</p>
+<p class="tagline">Ph.D. Student @ <a href="https://www.seu.edu.cn/" rel="noopener noreferrer" target="_blank">Southeast University</a> <span>·</span> <a href="https://github.com/SEU-ACAL/" rel="noopener noreferrer" target="_blank">SEU-ACAL Lab</a> <span>·</span> AI for EDA <span>·</span> RTL Verification</p>
 </header>
 <nav aria-label="Main navigation" class="site-nav">
 <a href="#about">About</a>
@@ -29,7 +29,7 @@
 <a href="#competitions">Competitions</a>
 <a href="#media">Media</a>
 <a href="#beyond">Beyond Research</a>
-<a href="#contact">Contact</a>
+
 </nav>
 <aside class="quick-nav" aria-label="Quick section navigation">
 <span class="quick-nav-label">JUMP TO</span>
@@ -44,7 +44,7 @@
 <a class="quick-nav-link" href="#competitions">Competitions</a>
 <a class="quick-nav-link" href="#media">Media</a>
 <a class="quick-nav-link" href="#beyond">Beyond Research</a>
-<a class="quick-nav-link" href="#contact">Contact</a>
+
 </div>
 </aside>
 <main>
@@ -54,15 +54,16 @@
 </div>
 <div class="bio-text">
 <h2 class="visually-hidden" id="about-heading">About Junhao Ye</h2>
-<p>Hi! I am <strong>Junhao Ye (叶俊豪)</strong>, a Ph.D. student in the School of Integrated Circuits at Southeast University, advised by <a href="https://zhejianguk.github.io/" rel="noopener noreferrer" target="_blank">Prof. Zhe Jiang</a>. I work at the intersection of large language models and electronic design automation, building practical methods that make RTL verification more automated, scalable, and dependable. My work has led to a first-author paper at ICCAD and a CCF-A paper at DAC, and I enjoy turning research prototypes into tools that can be used by hardware engineers.</p>
-<p>My current research develops LLM-aided verification systems for UVM testbench generation, assertion generation, and RTL security analysis. Beyond individual papers, I care about the full path from design intent to executable verification, including feedback, debugging, and deployment at IP and subsystem level. Alongside research, I have received the National Scholarship, Excellent Star of SZU, and Jicui Graduate recognition, while continuing to grow through open-source work and public-facing projects.</p>
-<p class="bio-zh" lang="zh-CN">你好！我是叶俊豪，东南大学集成电路学院博士生，导师是江哲老师。本科毕业于深圳大学。我的研究聚焦大模型辅助芯片验证，包括 UVM 验证环境自动生成、断言生成与 RTL 安全分析。</p>
+<p>Hi! I am <strong>Junhao Ye (叶俊豪)</strong>, a Ph.D. student in the School of Integrated Circuits at <a href="https://www.seu.edu.cn/" rel="noopener noreferrer" target="_blank">Southeast University</a>, advised by <a href="https://zhejianguk.github.io/" rel="noopener noreferrer" target="_blank">Prof. Zhe Jiang</a>. I received my B.S. in Microelectronics Science and Engineering from Shenzhen University.</p>
+<p>My research focuses on <strong>AI for Electronic Design Automation (EDA)</strong>, with an emphasis on LLM-aided RTL verification: UVM testbench generation, assertion generation, and RTL security analysis.</p>
+<p>I have a first-author paper accepted by ICCAD and a CCF-A paper accepted by DAC. My work has been integrated into ChatDV as a verification tool for small IP-level UVM verification. I have received the National Scholarship, Excellent Star of SZU, and Jicui Graduate recognition.</p>
+<p class="bio-zh" lang="zh-CN">你好！我是叶俊豪，东南大学集成电路学院博士生，导师是江哲老师。本科毕业于深圳大学。我的研究聚焦 AI for EDA，主要研究大模型辅助 RTL 验证。</p>
 </div>
 </section>
 <div aria-label="Profile links" class="social-links">
 <a class="social-btn" href="mailto:RRRichard_yjh@163.com">✉  Email</a>
 <a class="social-btn" href="https://zhejianguk.github.io/group.html" rel="noopener noreferrer" target="_blank">⌁  Research Group</a>
-<a class="social-btn" href="https://github.com/SEU-ACAL/" rel="noopener noreferrer" target="_blank">◈  SEU-ACAL Lab</a>
+
 <a aria-label="Google Scholar profile search" class="social-btn" href="https://scholar.google.com/scholar?q=%22Junhao+Ye%22+%22Zhe+Jiang%22" rel="noopener noreferrer" target="_blank"><svg aria-hidden="true" class="social-icon" viewBox="0 0 24 24"><path d="M12 3 2 8.5l10 5.5 8-4.4V16h2V8.5L12 3Z"/><path d="M6 12.5V17c3.2 2.2 8.8 2.2 12 0v-4.5l-6 3.3-6-3.3Z"/></svg> Google Scholar</a>
 <a class="social-btn" href="https://space.bilibili.com/674491625" rel="noopener noreferrer" target="_blank">▶  Bilibili</a>
 </div>
@@ -94,42 +95,25 @@
 <hr class="section-divider"/>
 <section aria-labelledby="research-heading" id="research">
 <h2 class="section-title" id="research-heading">Research <span class="section-subtitle">研究方向</span></h2>
-<p class="section-lead">Verification is the dominant front-end bottleneck: as designs become more integrated, the verification burden grows faster than design complexity. My work explores LLM-aided ways to make this process more scalable and trustworthy.</p>
+<p class="section-lead">My research focuses on AI for EDA, with verification as the central bottleneck.</p>
 <div class="research-overview">
 <div class="research-bottleneck">
-<div class="research-figure-title">Verification: The Dominant Front-End Bottleneck</div>
-<svg aria-label="Illustration showing verification as a 70 percent front-end bottleneck and its growing complexity for integrated IP" class="bottleneck-svg" role="img" viewBox="0 0 680 370">
-<rect fill="#fff" height="370" rx="7" width="680" x="0" y="0"/>
-<text class="svg-kicker" x="24" y="50">FRONT-END DESIGN EFFORT</text>
-<circle class="svg-ring-base" cx="105" cy="139" r="56"/>
-<circle class="svg-ring" cx="105" cy="139" r="56"/>
-<text class="svg-big" x="105" y="136">70%</text>
-<text class="svg-center-label" x="105" y="157">VERIFICATION</text>
-<text class="svg-label" x="192" y="112">30%  Design</text>
-<text class="svg-label svg-accent-text" x="192" y="145">70%  Functional verification</text>
-<line class="svg-line" x1="165" x2="185" y1="139" y2="139"/>
-<rect class="svg-workflow" height="135" rx="6" width="306" x="350" y="67"/>
-<text class="svg-workflow-title" x="370" y="91">FUNCTIONAL VERIFICATION</text>
-<text class="svg-step" x="370" y="119">Test planning</text><text class="svg-percent" x="626" y="119">10%</text>
-<rect class="svg-bar-bg" height="6" rx="3" width="255" x="370" y="126"/><rect class="svg-bar" height="6" rx="3" width="26" x="370" y="126"/>
-<text class="svg-step" x="370" y="151">TB construction</text><text class="svg-percent" x="626" y="151">30%</text>
-<rect class="svg-bar-bg" height="6" rx="3" width="255" x="370" y="158"/><rect class="svg-bar" height="6" rx="3" width="77" x="370" y="158"/>
-<text class="svg-step" x="370" y="183">Stimuli refinement</text><text class="svg-percent" x="626" y="183">50%</text>
-<rect class="svg-bar-bg" height="6" rx="3" width="255" x="370" y="190"/><rect class="svg-bar" height="6" rx="3" width="128" x="370" y="190"/>
-<text class="svg-caption" x="24" y="249">VERIFICATION COMPLEXITY GROWS WITH IP INTEGRATION</text>
-<line class="svg-axis" x1="54" x2="300" y1="336" y2="336"/><line class="svg-axis" x1="54" x2="54" y1="282" y2="336"/>
-<path class="svg-curve-soft" d="M54 331 C125 328 210 312 292 292"/>
-<path class="svg-curve-hot" d="M54 331 C155 327 224 292 292 264"/>
-<text class="svg-chart-label" x="65" y="300">Individual IP</text><text class="svg-chart-label svg-hot-text" x="212" y="276">Integrated IP</text>
-<text class="svg-axis-label" x="146" y="358">Number of IPs</text><text class="svg-axis-label" transform="rotate(-90 18 311)" x="18" y="311">Verification complexity</text>
-</svg>
-<p class="research-figure-caption">The bottleneck is not only writing RTL; it is building, debugging, and scaling the verification machinery around it.</p>
+<div class="research-source-figure">
+<div class="research-figure-block">
+<div class="research-annotation">A / Decomposition of IC front-end design and verification</div>
+<img alt="Verification as the dominant front-end bottleneck" loading="lazy" src="assets/research-bottleneck-a.png"/>
+</div>
+<div class="research-figure-block">
+<div class="research-annotation">B / Growing Verification Complexity for Subsystem</div>
+<img alt="Growing verification complexity for integrated IP" loading="lazy" src="assets/research-bottleneck-b.png"/>
+</div>
+</div>
 </div>
 <div class="research-directions">
-<div class="research-direction-intro"><span>LLM-AIDED DIRECTIONS</span><p>Three complementary directions target the most expensive parts of verification workflows.</p></div>
-<a class="research-direction direction-uvm" href="#research-uvm" id="research-uvm"><span class="direction-index">01</span><div><h3>UVM-TB Gen</h3><p>Generate reusable UVM environments from RTL, specifications, and protocol knowledge, then refine them through simulation feedback.</p></div><span class="direction-arrow">↗</span></a>
-<a class="research-direction direction-assert" href="#research-sva" id="research-sva"><span class="direction-index">02</span><div><h3>Assert-Gen</h3><p>Turn design intent and RTL context into executable SystemVerilog Assertions for formal checking and traceable verification.</p></div><span class="direction-arrow">↗</span></a>
-<a class="research-direction direction-security" href="#research-security" id="research-security"><span class="direction-index">03</span><div><h3>Security</h3><p>Discover RTL security vulnerabilities across specifications and module boundaries, then validate candidates with formal methods and simulation.</p></div><span class="direction-arrow">↗</span></a>
+<div class="research-direction-intro"><span>AI FOR EDA</span><p>Verification is the front-end bottleneck. LLMs make it programmable.</p></div>
+<a class="research-direction direction-uvm" href="#research-uvm" id="research-uvm"><span class="direction-index">01</span><div><h3>UVM-TB Generation</h3><p>From RTL to executable testbenches.</p></div><span class="direction-arrow">↗</span></a>
+<a class="research-direction direction-assert" href="#research-sva" id="research-sva"><span class="direction-index">02</span><div><h3>Assertion Generation</h3><p>From design intent to executable properties.</p></div><span class="direction-arrow">↗</span></a>
+<a class="research-direction direction-security" href="#research-security" id="research-security"><span class="direction-index">03</span><div><h3>Security Verification</h3><p>From RTL to validated vulnerabilities.</p></div><span class="direction-arrow">↗</span></a>
 </div>
 </div>
 </section>
@@ -164,12 +148,12 @@
 </section>
 <hr class="section-divider"/>
 <section aria-labelledby="experience-heading" id="experience">
-<h2 class="section-title" id="experience-heading">Experience <span class="section-subtitle">实习经历</span></h2>
+<h2 class="section-title" id="experience-heading">Research Intern <span class="section-subtitle">实习经历</span></h2>
 <div class="experience-list">
 <article class="experience-item">
-<div class="experience-mark"><span>EDA</span><small>RESEARCH INTERN</small></div>
+<div class="experience-mark"><img alt="National Center for Technology Innovation in EDA logo" class="ncti-logo" src="assets/nctieda-logo.png"/><small>RESEARCH INTERN</small><time class="experience-date" datetime="2025-07">2025.07 - Present</time></div>
 <div class="experience-content">
-<h3>Research Intern · National Center for Technology Innovation in EDA</h3>
+<h3><a href="https://www.nctieda.com/Introduction.html" rel="noopener noreferrer" target="_blank">National Center for Technology Innovation in EDA</a></h3>
 <p>Worked on LLM-aided UVM testbench generation, decomposing IP-level verification into component-wise generation, iterative error checking, repair, and stimulus enhancement. Built and evaluated a workflow that connects RTL, specifications, protocol context, simulation feedback, and debugging into one usable verification process.</p>
 <p>The resulting workflow was <strong>integrated as a verification tool in <a href="https://www.nctieda.com/CHATDV.html" rel="noopener noreferrer" target="_blank">ChatDV</a></strong> (<a href="https://github.com/SEU-ACAL/reproduce-UVM--ICCAD-25" rel="noopener noreferrer" target="_blank">project note</a>), enabling small IP-level UVM verification.</p>
 </div>
@@ -179,11 +163,11 @@
 <hr class="section-divider"/><section aria-labelledby="honors-heading" id="honors">
 <h2 class="section-title" id="honors-heading">Honors &amp; Awards <span class="section-subtitle">荣誉</span></h2>
 <div class="content-panel"><ul class="honors-other honors-visible">
-<li><span class="h-year">2025</span><span>Received an <strong>A+</strong> in the lab annual evaluation and was awarded <strong>Jicui Graduate（集萃研究生）</strong>.</span></li>
-<li><span class="h-year">2024</span><span>Received the <strong>Honors Bachelor's Degree（荣誉学士）</strong> and was named an <strong>Outstanding Graduate（优秀毕业生）</strong> of Shenzhen University.</span></li>
-<li><span class="h-year">2024</span><span>Received <strong>20+ awards and scholarships</strong> during my undergraduate years, including all five SZU university-level single-item scholarships - Academic Excellence, Innovation &amp; Entrepreneurship, Public Service, Outstanding Student Leader, and Sports &amp; Arts - completing the full Grand Slam.</span></li>
-<li><span class="h-year">2023</span><span>Received the highest honor for undergraduate students at Shenzhen University, <strong>"Excellent Star of SZU"（荔园卓越之星）</strong>, ranked 2nd among the 30,000 undergraduates in the school (top 0.0067%)!</span></li>
-<li><span class="h-year">2023</span><span>Received the <strong>National Scholarship（国家奖学金）</strong>, the highest honor for undergraduate students.</span></li>
+<li><span class="h-year">2025</span><span><strong>Jicui Graduate（集萃研究生）</strong>, Southeast University.</span></li>
+<li><span class="h-year">2024</span><span><strong>Outstanding Graduate（优秀毕业生）</strong>, Shenzhen University.</span></li>
+<li><span class="h-year">2024</span><span><strong>Honors Bachelor's Degree（荣誉学士）</strong>, Shenzhen University.</span></li>
+<li class="honor-featured"><span class="h-year">2023</span><span><span class="honor-kicker">FEATURED HONOR</span><strong>Excellent Star of SZU（荔园卓越之星）</strong>, Shenzhen University.</span></li>
+<li><span class="h-year">2023</span><span><strong>National Scholarship（国家奖学金）</strong>.</span></li>
 </ul></div>
 </section>
 <hr class="section-divider"/>
@@ -195,7 +179,7 @@
 <div class="achievement-body"><span class="achievement-year">2026</span><h3>Second Place · Hack@DAC 2026</h3><p>Our team placed second in the Hack@DAC 2026 competition.</p></div>
 </article>
 <article class="achievement-card"><div class="achievement-media"><img alt="National First Prize certificate for the 2023 Undergraduate IoT Design Contest" loading="lazy" src="assets/awards/iot-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National First Prize</h3><p>Undergraduate IoT Design Contest (Huawei Cup)</p></div></article>
-<article class="achievement-card"><div class="achievement-media"><img alt="National Second Prize certificate for the 2023 Blue Bridge Cup" loading="lazy" src="assets/awards/bluebridge-national-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National Second · Guangdong First</h3><p>Blue Bridge Cup · Microcontroller Design and Development</p></div></article>
+<article class="achievement-card"><div class="achievement-media"><img alt="National Second Prize certificate for the 2023 Blue Bridge Cup" loading="lazy" src="assets/awards/bluebridge-national-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National Second Prize</h3><p>Blue Bridge Cup · Microcontroller Design and Development</p></div></article>
 <article class="achievement-card"><div class="achievement-media"><img alt="National Third Prize certificate for the 2023 IC Innovation Competition" loading="lazy" src="assets/awards/ic-innovation-2023.png"/></div><div class="achievement-body"><span class="achievement-year">2023</span><h3>National Third Prize</h3><p>China College Students' IC Innovation and Entrepreneurship Competition</p></div></article>
 <article class="achievement-card"><div class="achievement-media"><img alt="Guangdong First Prize certificate for the 2022 Electronics Design Contest" loading="lazy" src="assets/awards/guangdong-electronics-2022.png"/></div><div class="achievement-body"><span class="achievement-year">2022</span><h3>Guangdong First Prize</h3><p>Guangdong Undergraduate Electronics Design Contest · AI &amp; Future Technology</p></div></article>
 </div>
@@ -216,22 +200,29 @@
 <hr class="section-divider"/>
 <section aria-labelledby="beyond-heading" id="beyond">
 <h2 class="section-title" id="beyond-heading">Beyond Research <span class="section-subtitle">研究之外</span></h2>
-<p class="beyond-intro">Research is my main pursuit, but curiosity keeps me moving across different worlds. I enjoy serving the communities around me, sharing ideas as a Bilibili creator, documenting life through photography and vlogs, and staying active through basketball, running, and fitness. I am happiest when I am learning by doing - building, explaining, performing, and trying something new.</p>
-<div class="beyond-grid">
-<article class="beyond-card"><span class="beyond-index">2.1 / SERVICE</span><h3>Volunteer Activities</h3><p>I took part in library and community volunteering during my undergraduate years, contributing <strong>more than 640 hours</strong> of service.</p></article>
-<article class="beyond-card"><span class="beyond-index">2.2 / CREATOR</span><h3>Bilibili UP Creator</h3><p>I share campus life, learning experiences, and personal reflections through video, turning everyday observations into stories.</p><a href="https://space.bilibili.com/674491625" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></article>
-<article class="beyond-card"><span class="beyond-index">2.3 / VISUALS</span><h3>Photography / Vlog</h3><p>Photography and vlogging are my way of slowing down, noticing details, and recording the places and people that shape my journey.</p></article>
-<article class="beyond-card"><span class="beyond-index">2.4 / MOVEMENT</span><h3>Sports</h3><p>Basketball is my favorite language outside the lab. I also keep running, training, and staying curious about what the body can learn.</p></article>
+<p class="beyond-intro">Outside research, I keep life wide through service, storytelling, visual work, and sport.</p>
+<div class="beyond-list">
+<article class="beyond-item">
+<div class="beyond-media"><img alt="Junhao Ye volunteering at a university library" loading="lazy" src="assets/volunteer-library.jpg"/></div>
+<div class="beyond-content"><span class="beyond-index">2.1 / SERVICE</span><h3>Volunteer Activities</h3><p>I contributed <strong>more than 640 hours</strong> to library and community volunteering during my undergraduate years.</p></div>
+</article>
+<article class="beyond-item">
+<div class="beyond-media"><img alt="Junhao Ye featured as a Bilibili creator" loading="lazy" src="assets/media/feature-slash-youth.jpg"/></div>
+<div class="beyond-content"><span class="beyond-index">2.2 / CREATOR</span><h3>Bilibili UP Creator</h3><p>I share campus life, learning experiences, and personal reflections through video.</p><a href="https://space.bilibili.com/674491625" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></div>
+</article>
+<article class="beyond-item">
+<div class="beyond-media"><img alt="Camera and notebook representing photography and vlogging" loading="lazy" src="assets/beyond-photography-vlog.png"/></div>
+<div class="beyond-content"><span class="beyond-index">2.3 / VISUALS</span><h3>Photography / Vlog</h3><p>I use photography and vlogging to record places, people, and the details that shape my journey.</p></div>
+</article>
+<article class="beyond-item">
+<div class="beyond-media"><img alt="Basketball court representing sports and an active lifestyle" loading="lazy" src="assets/beyond-sports.png"/></div>
+<div class="beyond-content"><span class="beyond-index">2.4 / MOVEMENT</span><h3>Sports</h3><p>Basketball is my favorite language outside the lab; I also keep running, training, and staying active.</p></div>
+</article>
 </div>
 </section>
-<hr class="section-divider"/>
-<section aria-labelledby="contact-heading" id="contact">
-<h2 class="section-title" id="contact-heading">Contact <span class="section-subtitle">联系我</span></h2>
-<p>For research discussions or collaboration, please email <a href="mailto:RRRichard_yjh@163.com">RRRichard_yjh@163.com</a>.</p>
-<p class="contact-affiliation">School of Integrated Circuits, Southeast University · Nanjing, China</p>
-</section>
+
 </main>
-<footer class="site-footer"><p>© 2026 Junhao Ye · Last updated September 2026</p><p>Academic profile based on <a href="https://zhejianguk.github.io/group.html" rel="noopener noreferrer" target="_blank">research group records</a>, <a href="https://www.szu.edu.cn/info/1161/18491.htm" rel="noopener noreferrer" target="_blank">university news</a>, and the linked publications.</p><a class="back-to-top" href="#top">↑ Back to top</a></footer>
+<footer class="site-footer"><p>© 2026 Junhao Ye · Last updated September 2026</p><a class="back-to-top" href="#top">↑ Back to top</a></footer>
 </div>
 <script src="home.js"></script></body>
 </html>

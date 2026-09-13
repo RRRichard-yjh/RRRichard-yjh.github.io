@@ -1052,3 +1052,207 @@
   }
   .beyond-card { min-height: 0; }
 }
+
+
+/* ---------- PDF-derived research figure and refined internship identity ---------- */
+.site-header .tagline a {
+  color: inherit;
+  text-decoration: none;
+}
+.site-header .tagline a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.research-overview {
+  grid-template-columns: minmax(0, 1.5fr) minmax(285px, .84fr);
+  gap: 20px;
+}
+.research-bottleneck {
+  padding: 0;
+}
+.research-source-figure {
+  margin: 0;
+  padding: 12px;
+}
+.research-source-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #d9dfe4;
+  background: #fff;
+}
+.research-source-figure img + img {
+  margin-top: 9px;
+}
+.research-source-figure figcaption {
+  margin-top: 10px;
+  color: var(--text-muted);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.ncti-mark {
+  display: block;
+  width: 58px;
+  height: 58px;
+  fill: #fff;
+  background: #315d76;
+  border-radius: 13px;
+}
+.experience-mark {
+  align-items: flex-start;
+}
+.experience-date {
+  color: var(--text-muted);
+  font: 500 .68rem/1.35 var(--font-mono);
+  letter-spacing: .02em;
+  white-space: nowrap;
+}
+.experience-content h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+.experience-content h3 a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+  .research-source-figure {
+    padding: 8px;
+  }
+  .ncti-mark {
+    width: 50px;
+    height: 50px;
+    border-radius: 11px;
+  }
+}
+
+
+.ncti-logo {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  max-height: 58px;
+  object-fit: contain;
+  object-position: left center;
+}
+@media (max-width: 700px) {
+  .ncti-logo {
+    width: 142px;
+    max-height: 50px;
+  }
+}
+
+/* Final refinements: annotated research figures, featured honor, and Beyond Research rows. */
+.research-source-figure {
+  display: grid;
+  gap: 13px;
+  margin: 0;
+  padding: 12px;
+}
+.research-figure-block {
+  display: grid;
+  gap: 7px;
+}
+.research-annotation {
+  width: fit-content;
+  max-width: 100%;
+  padding: 4px 8px;
+  border: 2px solid #ef5350;
+  color: #b23a38;
+  background: #fff8f7;
+  font: 500 .7rem/1.35 var(--font-mono);
+  letter-spacing: .01em;
+}
+.research-source-figure img {
+  margin: 0;
+}
+.honors-visible .honor-featured {
+  margin: 4px 0;
+  padding: 10px 8px;
+  border-left: 3px solid var(--accent);
+  background: rgba(254,249,195,.55);
+}
+.honor-featured .h-year {
+  color: var(--accent);
+}
+.honor-kicker {
+  display: block;
+  margin-bottom: 2px;
+  color: var(--accent);
+  font: 500 .58rem var(--font-mono);
+  letter-spacing: .08em;
+}
+.beyond-list {
+  border-top: 1px solid var(--border);
+}
+.beyond-item {
+  display: grid;
+  grid-template-columns: 150px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.beyond-media {
+  width: 150px;
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+}
+.beyond-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.beyond-index {
+  color: var(--accent);
+  font: 500 .62rem var(--font-mono);
+  letter-spacing: .08em;
+}
+.beyond-content h3 {
+  margin: 7px 0 5px;
+  font: 600 1rem/1.35 var(--font-hand);
+}
+.beyond-content p {
+  color: var(--text-muted);
+  font-size: .84rem;
+  line-height: 1.6;
+}
+.beyond-content a {
+  display: inline-block;
+  margin-top: 7px;
+  color: var(--accent);
+  font: 500 .68rem var(--font-mono);
+  text-decoration: none;
+}
+.beyond-content a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 700px) {
+  .research-source-figure {
+    padding: 8px;
+  }
+  .research-annotation {
+    font-size: .62rem;
+  }
+  .beyond-item {
+    grid-template-columns: 90px minmax(0, 1fr);
+    gap: 13px;
+    padding: 14px 0;
+  }
+  .beyond-media {
+    width: 90px;
+    height: 76px;
+  }
+}
