@@ -2033,3 +2033,14 @@ main > .section-band {
   --section-band-bg: #f2f5fa;
   background: var(--section-band-bg) !important;
 }
+
+/* Use the full research width and fit all four media reports on one desktop row. */
+#research .section-lead {
+  max-width: none;
+}
+
+@media (min-width: 901px) {
+  .feature-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
