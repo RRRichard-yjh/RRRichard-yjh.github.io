@@ -1663,35 +1663,17 @@ button.pub-link {
     height: 76px;
   }
 }
-/* Awards mirror a compact academic CV list: heading at left, entries at right. */
+/* Awards use a simple vertical section rhythm: heading first, list below. */
 #honors {
-  display: grid;
-  grid-template-columns: 210px minmax(0, 1fr);
-  column-gap: 24px;
-  align-items: start;
+  display: block;
 }
 #honors .section-title {
-  grid-column: 1;
-  grid-row: 1;
-  margin: 0;
+  margin: 0 0 18px;
 }
 #honors .awards-list {
-  grid-column: 2;
-  grid-row: 1;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 11px;
-}
-#honors .awards-list li {
-  grid-column: auto;
-}
-@media (max-width: 900px) {
-  #honors {
-    display: block;
-  }
-  #honors .section-title {
-    margin-bottom: 14px;
-  }
+  gap: 0;
 }
 /* Clear module boundaries without adding more top-level categories. */
 main > .phase-section {
