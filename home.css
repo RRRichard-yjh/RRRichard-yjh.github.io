@@ -1693,3 +1693,55 @@ button.pub-link {
     margin-bottom: 14px;
   }
 }
+/* Clear module boundaries without adding more top-level categories. */
+main > .phase-section {
+  position: relative;
+  margin: 0 -22px;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+main > .phase-section + .section-divider {
+  margin: 20px 0;
+}
+
+.phase-section .section-title {
+  margin-top: 0;
+}
+
+.outreach-group-label {
+  grid-column: 1 / -1;
+  margin: 3px 0 -3px;
+  color: #2774c9;
+  font-family: "Space Mono", monospace;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+.outreach-group-label--life {
+  color: #178366;
+  margin-top: 10px;
+}
+
+.beyond-item--public {
+  background: rgba(230, 241, 255, 0.78) !important;
+}
+
+.beyond-item--life {
+  background: rgba(229, 246, 238, 0.82) !important;
+}
+
+@media (max-width: 700px) {
+  main > .phase-section {
+    margin: 0 -10px;
+    padding: 17px 14px;
+    border-radius: 8px;
+  }
+
+  .outreach-group-label {
+    margin-top: 2px;
+  }
+}
