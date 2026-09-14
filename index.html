@@ -39,7 +39,7 @@
 <a class="quick-nav-link" href="#research">Research</a>
 <a class="quick-nav-link" href="#publications">Publications</a>
 <a class="quick-nav-link" href="#education">Education</a>
-<a class="quick-nav-link" href="#experience">Experience</a>
+<a class="quick-nav-link" href="#experience">Research Intern</a>
 <a class="quick-nav-link" href="#honors">Honors</a>
 <a class="quick-nav-link" href="#competitions">Competitions</a>
 <a class="quick-nav-link" href="#media">Media</a>
@@ -55,9 +55,9 @@
 <div class="bio-text">
 <h2 class="visually-hidden" id="about-heading">About Junhao Ye</h2>
 <p>Hi! I am <strong>Junhao Ye (叶俊豪)</strong>, a Ph.D. candidate in the <span>School of Integrated Circuits at Southeast University</span>, advised by <a href="https://zhejianguk.github.io/" rel="noopener noreferrer" target="_blank">Prof. Zhe Jiang</a>. I received my B.S. in Microelectronics Science and Engineering from Shenzhen University, ranking 1/103 in the comprehensive evaluation.</p>
-<p>My research focuses on <strong>AI for Electronic Design Automation (EDA)</strong>, especially LLM-aided RTL verification. I study UVM-based automation spanning testbench and stimulus generation, simulation feedback and refinement, assertion generation, and SoC security detection.</p>
+<p>My research focuses on <strong>AI for Electronic Design Automation (EDA)</strong>, especially LLM-aided RTL verification. I study <strong>UVM-based automation</strong> spanning testbench and stimulus generation, simulation feedback and refinement; assertion generation; and SoC security detection.</p>
 <p>I have published 4 papers at the leading EDA conferences ICCAD and DAC. I am also a research intern at the National Center for Technology Innovation in EDA, where some of my research work has been integrated into <a href="https://www.nctieda.com/CHATDV.html" rel="noopener noreferrer" target="_blank">ChatDV</a> to support end-to-end automated UVM verification for small IPs. I have received the National Scholarship, Excellent Star of SZU, and Jicui Graduate honors.</p>
-<p class="bio-zh" lang="zh-CN">你好！我是叶俊豪，东南大学集成电路学院博士生，师从江哲教授。本科毕业于深圳大学，并以专业第一推免至东南大学。我的研究聚焦 AI for EDA，主要探索大模型驱动的 RTL 验证，重点关注以 UVM 为核心的自动化验证闭环。</p>
+<p class="bio-zh" lang="zh-CN">你好！我是叶俊豪，东南大学集成电路学院博士生，师从江哲教授。本科毕业于深圳大学，专业排名 1/103。我的研究聚焦 AI for EDA，重点关注以 UVM 为核心的自动化验证闭环。</p>
 </div>
 </section>
 <div aria-label="Profile links" class="social-links">
@@ -94,26 +94,26 @@
 </section>
 <hr class="section-divider"/>
 <section aria-labelledby="research-heading" id="research">
-<h2 class="section-title" id="research-heading">Research Background <span class="section-subtitle">研究背景</span></h2>
-<p class="section-lead" lang="zh-CN">随着敏捷硬件开发推动现代片上系统（SoC）项目快速迭代，验证复杂度持续上升。数据显示，在典型的前端流程中，验证已成为主要瓶颈，占用了前端整体周期的近 70%。为了应对这种复杂性，我们探索通过 LLM 辅助 RTL 验证的可能。</p>
+<h2 class="section-title" id="research-heading">Research Background <span class="section-subtitle">BACKGROUND</span></h2>
+<p class="section-lead">As agile hardware development accelerates the iteration of modern System-on-Chip (SoC) projects, verification complexity continues to grow. Studies show that verification has become the dominant bottleneck, consuming nearly 70% of the front-end development cycle. To address this complexity, we explore the potential of using LLMs to assist RTL verification.</p>
 <div class="research-overview">
 <div class="research-bottleneck">
 <div class="research-source-figure">
 <div class="research-figure-block">
-<div class="research-annotation">A / Decomposition of IC front-end design and verification</div>
+<div class="research-annotation">Verification is the dominant front-end bottleneck</div>
 <img alt="Verification as the dominant front-end bottleneck" loading="lazy" src="assets/research-bottleneck-a.png"/>
 </div>
 <div class="research-figure-block">
-<div class="research-annotation">B / Growing Verification Complexity for Subsystem</div>
+<div class="research-annotation">Verification complexity grows with subsystem integration</div>
 <img alt="Growing verification complexity for integrated IP" loading="lazy" src="assets/research-bottleneck-b.png"/>
 </div>
 </div>
 </div>
 <div class="research-directions">
-<div class="research-direction-intro"><span>THREE DIRECTIONS</span><p lang="zh-CN">为了解决这些挑战，我围绕三个方向开展研究：</p></div>
-<a class="research-direction direction-uvm" href="#research-uvm" id="research-uvm"><span class="direction-index">01</span><div><h3>UVM Verification</h3><p lang="zh-CN">探索从小模块、IP、Subsystem 到 SoC 的 UVM 自动化验证，覆盖 Testbench 与激励生成。</p></div><span class="direction-arrow">↗</span></a>
-<a class="research-direction direction-assert" href="#research-sva" id="research-sva"><span class="direction-index">02</span><div><h3>Assertion Generation</h3><p lang="zh-CN">探索从设计意图到可执行断言的自动生成，辅助复杂系统的持续验证。</p></div><span class="direction-arrow">↗</span></a>
-<a class="research-direction direction-security" href="#research-security" id="research-security"><span class="direction-index">03</span><div><h3>SoC Security</h3><p lang="zh-CN">探索面向 SoC 的安全检测与漏洞分析，提升复杂系统的可信验证能力。</p></div><span class="direction-arrow">↗</span></a>
+<div class="research-direction-intro"><span>THREE DIRECTIONS</span><p>To meet these challenges, I work in three directions:</p></div>
+<a class="research-direction direction-uvm" href="#research-uvm" id="research-uvm"><span class="direction-index">01</span><div><h3>UVM Verification</h3><p>UVM automation from modules and IP blocks to subsystems and SoCs, spanning testbench and stimulus generation.</p></div><span class="direction-arrow">↗</span></a>
+<a class="research-direction direction-assert" href="#research-sva" id="research-sva"><span class="direction-index">02</span><div><h3>Assertion Generation</h3><p>Automated assertion generation from design intent, enabling continuous checking across the verification flow.</p></div><span class="direction-arrow">↗</span></a>
+<a class="research-direction direction-security" href="#research-security" id="research-security"><span class="direction-index">03</span><div><h3>SoC Security Analysis</h3><p>Security analysis and detection for SoCs, strengthening trustworthy system-level verification.</p></div><span class="direction-arrow">↗</span></a>
 </div>
 </div>
 </section>
@@ -151,9 +151,9 @@
 <h2 class="section-title" id="experience-heading">Research Intern <span class="section-subtitle">实习经历</span></h2>
 <div class="experience-list">
 <article class="experience-item">
-<div class="experience-mark"><img alt="National Center for Technology Innovation in EDA logo" class="ncti-logo" src="assets/nctieda-logo.png"/><small>RESEARCH INTERN</small><time class="experience-date" datetime="2025-07">2025.07 - Present</time></div>
+<div class="experience-mark"><img alt="National Center for Technology Innovation in EDA logo" class="ncti-logo" src="assets/nctieda-logo.png"/></div>
 <div class="experience-content">
-<h3><a href="https://www.nctieda.com/Introduction.html" rel="noopener noreferrer" target="_blank">National Center for Technology Innovation in EDA</a></h3>
+<div class="experience-heading"><h3><a href="https://www.nctieda.com/Introduction.html" rel="noopener noreferrer" target="_blank">National Center for Technology Innovation in EDA</a></h3><div class="experience-meta"><small>RESEARCH INTERN</small><time class="experience-date" datetime="2025-07">2025.07 - Present</time></div></div>
 <p>Worked on LLM-aided automation for UVM-based RTL verification, including testbench and stimulus generation. The workflow was <strong>integrated as a verification tool in <a href="https://www.nctieda.com/CHATDV.html" rel="noopener noreferrer" target="_blank">ChatDV</a></strong> (<a href="https://github.com/SEU-ACAL/reproduce-UVM--ICCAD-25" rel="noopener noreferrer" target="_blank">project note</a>), enabling end-to-end small IP-level UVM verification, reducing verification time to hours with a <strong>20x speedup</strong>.</p>
 </div>
 </article>
@@ -203,15 +203,15 @@
 <div class="beyond-list">
 <article class="beyond-item">
 <div class="beyond-media"><img alt="Junhao Ye as a Bilibili study creator" loading="lazy" src="assets/media/bilibili-study.png"/></div>
-<div class="beyond-content"><span class="beyond-index">2.1 / CREATOR</span><h3>Bilibili UP Creator</h3><p lang="zh-CN">我是 B 站学习区的一名 UP 主，独立制作的数电、模电课程在 Bilibili 累计播放量超过 <strong>470 万</strong>，帮助 <strong>1w+</strong> 学生通过期末考试和考研。</p><a href="https://space.bilibili.com/674491625" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></div>
+<div class="beyond-content"><span class="beyond-index">2.1 / CREATOR</span><h3>Bilibili UP Creator</h3><p>I am a study-content creator on Bilibili. My independently produced digital and analog electronics courses have received over <strong>4.7 million views</strong>, helping <strong>10,000+ students</strong> prepare for final exams and graduate-school entrance exams.</p><a href="https://space.bilibili.com/674491625" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></div>
 </article>
 <article class="beyond-item">
 <div class="beyond-media"><img alt="Junhao Ye volunteering in community service" loading="lazy" src="assets/volunteer-library.jpg"/></div>
-<div class="beyond-content"><span class="beyond-index">2.2 / SERVICE</span><h3>Volunteer Activities</h3><p lang="zh-CN">我是中共党员、广东省三星志愿者（最高星级），参与过献血，并在图书馆、医院、展演现场等场所开展志愿服务，累计时长超过 <strong>640 小时</strong>。</p></div>
+<div class="beyond-content"><span class="beyond-index">2.2 / SERVICE</span><h3>Volunteer Activities</h3><p>I am a member of the Communist Party of China and a Guangdong three-star volunteer, the highest level. I have donated blood and completed more than <strong>640 hours</strong> of service in libraries, hospitals, event venues, and more.</p></div>
 </article>
 <article class="beyond-item">
 <div class="beyond-media"><img alt="Travel photography and vlogging" loading="lazy" src="assets/beyond-photography-vlog.png"/></div>
-<div class="beyond-content"><span class="beyond-index">2.3 / VISUALS</span><h3>Photography / Vlog</h3><p lang="zh-CN">我热爱旅行、摄影，也会进行旅行 Vlog 的拍摄，并持续更新一些频道内容，目前包括“美国留子的真实生活”。</p><a href="https://weixin.qq.com/sph/AE4d72kixS" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></div>
+<div class="beyond-content"><span class="beyond-index">2.3 / VISUALS</span><h3>Photography / Vlog</h3><p>I love traveling and photography, and I also create travel vlogs and update several channels, including “The Real Life of a Chinese Student in the U.S.”</p><a href="https://weixin.qq.com/sph/AE4d72kixS" rel="noopener noreferrer" target="_blank">Visit my channel ↗</a></div>
 </article>
 <article class="beyond-item">
 <div class="beyond-media"><img alt="Basketball and fitness" loading="lazy" src="assets/media/beyond-sports-basketball.jpg"/></div>
