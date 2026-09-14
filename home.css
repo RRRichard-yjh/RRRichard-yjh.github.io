@@ -2030,7 +2030,7 @@ main > .section-band--green {
 }
 /* One calm cool-neutral band: alternate it with the page background, never mix palettes. */
 main > .section-band {
-  --section-band-bg: #f2f5fa;
+  --section-band-bg: #fff7e6;
   background: var(--section-band-bg) !important;
 }
 
