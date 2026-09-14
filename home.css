@@ -1808,3 +1808,48 @@ main > .phase-section + .section-divider {
     font-size: .72rem;
   }
 }
+/* Section rhythm: no rules, only natural space and restrained full-width color bands. */
+main > .phase-section {
+  margin: 0 !important;
+  padding: 30px 0;
+  background: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+main > .section-band {
+  position: relative;
+  padding: 38px 0;
+  box-shadow: 0 0 0 100vmax var(--section-band-bg);
+  clip-path: inset(0 -100vmax);
+}
+
+main > .section-band--blue {
+  --section-band-bg: #f5f8fd;
+  background: #f5f8fd !important;
+}
+
+main > .section-band--slate {
+  --section-band-bg: #f7f8fa;
+  background: #f7f8fa !important;
+}
+
+main > .section-band--warm {
+  --section-band-bg: #fdfaf4;
+  background: #fdfaf4 !important;
+}
+
+main > .section-band--green {
+  --section-band-bg: #f4faf7;
+  background: #f4faf7 !important;
+}
+
+@media (max-width: 700px) {
+  main > .phase-section {
+    padding: 24px 0;
+  }
+
+  main > .section-band {
+    padding: 29px 0;
+  }
+}
