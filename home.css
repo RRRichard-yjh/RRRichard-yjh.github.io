@@ -1518,3 +1518,178 @@ button.pub-link {
     padding: 14px 7px;
   }
 }
+/* Layout refinement: aligned profile copy, compact research directions, centered feature card, and paired Beyond rows. */
+@media (min-width: 701px) {
+  .bio-text > p:not(.bio-zh) {
+    text-align: justify;
+    text-align-last: auto;
+    text-wrap: pretty;
+  }
+}
+.research-directions {
+  gap: 6px;
+}
+.research-direction-intro {
+  padding: 0 2px 2px;
+}
+.research-direction-intro p {
+  margin-top: 3px;
+}
+.research-direction {
+  grid-template-columns: 26px minmax(0, 1fr) 15px;
+  gap: 8px;
+  padding: 8px 10px;
+}
+.research-direction h3 {
+  margin-bottom: 2px;
+  font-size: .9rem;
+}
+.research-direction p {
+  font-size: .76rem;
+  line-height: 1.4;
+}
+.direction-index {
+  font-size: .62rem;
+}
+.direction-arrow {
+  font-size: .86rem;
+}
+.competition-grid .competition-featured {
+  grid-column: 1 / -1;
+  width: min(100%, 460px);
+  justify-self: center;
+}
+.competition-grid .competition-featured .achievement-media,
+.competition-featured .achievement-media {
+  height: 185px;
+}
+.profile-film {
+  grid-template-columns: minmax(0, 420px) minmax(260px, 1fr);
+  justify-content: center;
+}
+.profile-film-media {
+  width: 100%;
+  max-width: 420px;
+  justify-self: center;
+}
+.profile-film video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  max-height: none;
+  object-fit: cover;
+}
+.awards-list {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  gap: 11px 24px;
+  list-style: none;
+}
+.awards-list li {
+  grid-column: 2;
+  position: relative;
+  padding-left: 16px;
+  color: var(--text-muted);
+  font-size: .92rem;
+  line-height: 1.45;
+}
+.awards-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #c8d5e5;
+}
+.awards-list strong {
+  color: var(--text);
+  font-weight: 600;
+}
+.awards-list span {
+  margin-left: 6px;
+  color: var(--text-muted);
+  font: 500 .7rem var(--font-mono);
+}
+.beyond-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 18px;
+  border-top: 1px solid var(--border);
+}
+.beyond-item {
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 15px;
+  margin: 0;
+  padding: 16px 11px;
+}
+.beyond-media {
+  width: 112px;
+  height: 82px;
+}
+.beyond-item:nth-child(1),
+.beyond-item:nth-child(2) {
+  background: rgba(37,99,235,.045);
+}
+.beyond-item:nth-child(3),
+.beyond-item:nth-child(4) {
+  background: rgba(44,139,104,.06);
+}
+@media (max-width: 900px) {
+  .profile-film {
+    grid-template-columns: 1fr;
+  }
+  .profile-film-media {
+    max-width: 420px;
+  }
+  .awards-list {
+    grid-template-columns: 1fr;
+  }
+  .awards-list li {
+    grid-column: 1;
+  }
+}
+@media (max-width: 700px) {
+  .competition-grid .competition-featured {
+    width: 100%;
+  }
+  .beyond-list {
+    grid-template-columns: 1fr;
+  }
+  .beyond-item {
+    grid-template-columns: 90px minmax(0, 1fr);
+    margin: 0;
+    padding: 14px 7px;
+  }
+  .beyond-media {
+    width: 90px;
+    height: 76px;
+  }
+}
+/* Awards mirror a compact academic CV list: heading at left, entries at right. */
+#honors {
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr);
+  column-gap: 24px;
+  align-items: start;
+}
+#honors .section-title {
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+}
+#honors .awards-list {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 11px;
+}
+#honors .awards-list li {
+  grid-column: auto;
+}
+@media (max-width: 900px) {
+  #honors {
+    display: block;
+  }
+  #honors .section-title {
+    margin-bottom: 14px;
+  }
+}
