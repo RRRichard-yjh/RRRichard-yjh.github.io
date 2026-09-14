@@ -1745,3 +1745,66 @@ main > .phase-section + .section-divider {
     margin-top: 2px;
   }
 }
+/* Right-hand reading rail and a more compact research comparison. */
+@media (min-width: 1281px) {
+  .quick-nav {
+    right: max(20px, calc((100vw - var(--max-width)) / 2 - 148px));
+    left: auto;
+    padding: 4px 11px 4px 0;
+    border-right: 3px solid #e3e8f1;
+    border-left: 0;
+    text-align: right;
+  }
+
+  .quick-nav-label {
+    margin: 0 6px 12px 0;
+  }
+
+  .quick-nav-link {
+    margin-right: -14px;
+    margin-left: 0;
+    padding: 5px 17px 5px 8px;
+    border-right: 3px solid transparent;
+    border-left: 0;
+  }
+
+  .quick-nav-link.is-active {
+    border-right-color: var(--accent);
+    border-left-color: transparent;
+  }
+}
+
+@media (min-width: 901px) {
+  .research-overview {
+    grid-template-columns: minmax(0, 390px) minmax(0, 350px);
+    justify-content: center;
+    align-items: start;
+    gap: 16px;
+  }
+
+  .research-source-figure {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .research-source-figure img {
+    max-height: 150px;
+    object-fit: contain;
+  }
+
+  .research-directions {
+    width: 100%;
+    align-self: start;
+  }
+}
+
+.research-annotation {
+  color: #171717;
+  font: 700 .8rem/1.35 var(--font-hand);
+}
+
+@media (max-width: 700px) {
+  .research-annotation {
+    font-size: .72rem;
+  }
+}
