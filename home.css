@@ -2044,3 +2044,58 @@ main > .section-band {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+/* Compact paired Beyond Research rows, with a restrained Bilibili signal. */
+#beyond .beyond-intro {
+  margin-bottom: 10px;
+  font-size: .86rem;
+  line-height: 1.55;
+}
+
+#beyond .beyond-item {
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 12px;
+  padding: 11px 8px;
+}
+
+#beyond .beyond-media {
+  width: 96px;
+  height: 68px;
+}
+
+#beyond .beyond-content h3 {
+  margin: 3px 0 3px;
+  font-size: .92rem;
+}
+
+#beyond .beyond-content p {
+  font-size: .78rem;
+  line-height: 1.48;
+}
+
+#beyond .beyond-content a {
+  margin-top: 4px;
+}
+
+.bilibili-highlight {
+  display: inline-block;
+  color: var(--accent);
+  font: 600 .58rem/1.3 var(--font-mono);
+  letter-spacing: .06em;
+}
+
+#beyond .beyond-item--bilibili {
+  border-left: 2px solid rgba(37, 99, 235, 0.72);
+  padding-left: 10px;
+}
+
+@media (max-width: 700px) {
+  #beyond .beyond-item {
+    grid-template-columns: 84px minmax(0, 1fr);
+    padding: 10px 5px;
+  }
+
+  #beyond .beyond-media {
+    width: 84px;
+    height: 66px;
+  }
+}
