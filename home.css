@@ -1423,3 +1423,98 @@ button.pub-link {
     text-align: left;
   }
 }
+/* Compact award, coverage, and Beyond Research layouts. */
+.honors-other {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+.honors-other li,
+.honors-other li.honor-featured {
+  min-width: 0;
+  min-height: 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  padding: 10px 9px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  background: rgba(255,255,255,.42);
+}
+.honors-other li.honor-featured {
+  border-left: 3px solid var(--accent);
+  background: rgba(254,249,195,.55);
+}
+.honors-other .h-year {
+  width: auto;
+  padding-top: 0;
+  font-size: .68rem;
+}
+.honors-other li > span:last-child {
+  font-size: .75rem;
+  line-height: 1.42;
+}
+.honors-other .honor-kicker {
+  font-size: .54rem;
+}
+.competition-grid .competition-featured {
+  grid-column: auto;
+}
+.competition-grid .competition-featured .achievement-media,
+.competition-featured .achievement-media {
+  height: 132px;
+  padding: 7px;
+}
+.competition-grid .competition-featured.achievement-card-photo .achievement-media {
+  padding: 7px;
+}
+.competition-grid .competition-featured.achievement-card-photo .achievement-media img {
+  object-fit: contain;
+}
+.profile-film {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, .72fr);
+  gap: 16px;
+}
+.profile-film video {
+  aspect-ratio: 2.15 / 1;
+  max-height: 220px;
+}
+.beyond-item {
+  margin: 0 -12px;
+  padding: 18px 12px;
+}
+.beyond-item:nth-child(1),
+.beyond-item:nth-child(2) {
+  background: rgba(37,99,235,.045);
+}
+.beyond-item:nth-child(3) {
+  background: rgba(168,142,104,.07);
+}
+.beyond-item:nth-child(4) {
+  background: rgba(44,139,104,.06);
+}
+.research-annotation {
+  font-size: .84rem;
+  color: var(--text-muted);
+}
+@media (max-width: 900px) {
+  .honors-other {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .profile-film {
+    grid-template-columns: 1fr;
+  }
+  .profile-film video {
+    max-height: none;
+  }
+}
+@media (max-width: 700px) {
+  .honors-other {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .beyond-item {
+    margin: 0 -7px;
+    padding: 14px 7px;
+  }
+}
