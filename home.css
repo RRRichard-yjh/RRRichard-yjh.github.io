@@ -2107,3 +2107,10 @@ main > .section-band {
 main > .section-band {
   --section-band-bg: #fff7e6;
 }
+/* Expand the left research figure to align with the intended comparison frame. */
+@media (min-width: 901px) {
+  .research-overview {
+    grid-template-columns: minmax(0, 520px) minmax(0, 380px);
+    gap: 30px;
+  }
+}
