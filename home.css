@@ -2156,6 +2156,7 @@ main > .section-band {
 }
 #honors .awards-list li {
   display: grid;
+  grid-column: auto;
   position: static;
   padding-left: 0;
 }
