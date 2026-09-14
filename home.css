@@ -2145,3 +2145,51 @@ main > .section-band {
     font-size: .76rem;
   }
 }
+/* Awards and secondary competition results share one quiet, CV-style rhythm. */
+.competition-list,
+#honors .awards-list {
+  border-top: 1px solid rgba(91, 99, 114, .15);
+}
+.competition-list li,
+#honors .awards-list li {
+  grid-template-columns: 68px minmax(0, 1fr);
+  gap: 16px;
+  padding: 9px 0;
+  border-bottom-color: rgba(91, 99, 114, .15);
+  color: #4f5765;
+  font-size: .82rem;
+}
+.competition-list time,
+#honors .awards-list time {
+  color: #727b8b;
+  font: 600 .68rem var(--font-mono);
+  letter-spacing: .035em;
+}
+#honors .awards-list {
+  width: min(100%, 900px);
+  margin: 2px 0 0;
+  padding: 0;
+  list-style: none;
+  gap: 0;
+}
+#honors .awards-list li {
+  display: grid;
+  position: static;
+  padding-left: 0;
+}
+#honors .awards-list li::before {
+  content: none;
+}
+#honors .awards-list span {
+  margin-left: 0;
+  color: inherit;
+  font: inherit;
+}
+@media (max-width: 700px) {
+  .competition-list li,
+  #honors .awards-list li {
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 10px;
+    font-size: .76rem;
+  }
+}
