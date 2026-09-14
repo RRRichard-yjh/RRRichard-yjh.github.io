@@ -2028,3 +2028,8 @@ main > .section-band--green {
     height: 190px;
   }
 }
+/* One calm cool-neutral band: alternate it with the page background, never mix palettes. */
+main > .section-band {
+  --section-band-bg: #f2f5fa;
+  background: var(--section-band-bg) !important;
+}
