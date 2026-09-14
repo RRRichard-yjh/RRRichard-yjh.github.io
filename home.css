@@ -2033,16 +2033,3 @@ main > .section-band {
   --section-band-bg: #f2f5fa;
   background: var(--section-band-bg) !important;
 }
-/* Keep the recognition list visually contained without making it a featured card. */
-#honors {
-  padding: 23px 26px !important;
-  background: rgba(255, 255, 255, 0.58) !important;
-  border: 1px solid rgba(212, 208, 200, 0.9) !important;
-  border-radius: 9px !important;
-}
-
-@media (max-width: 700px) {
-  #honors {
-    padding: 18px 15px !important;
-  }
-}
